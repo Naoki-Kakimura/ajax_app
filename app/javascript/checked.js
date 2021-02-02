@@ -2,10 +2,10 @@ function check() {
   const posts = document.querySelectorAll(".post")
 
   posts.forEach(function(post){
-    if (post.getAttribute("data-check") != null){
+    if (post.getAttribute("data-load") != null){
       return null;
     }
-    post.setAttribute("data-check","true") ;
+    post.setAttribute("data-load","true") ;
     post.addEventListener('click', () => {
       const postId = post.getAttribute("data-id");
       const XHR = new XMLHttpRequest();
